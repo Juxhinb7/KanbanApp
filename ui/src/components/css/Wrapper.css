@@ -1,0 +1,74 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+header {
+    background-color: black;
+    border-radius: 6px;
+    margin: 1vh;
+}
+
+h1 {
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    font-family: "Comic Sans MS";
+    
+}
+
+#tasks {
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.flex-item {
+    margin-right: 2vh;
+    margin-left: 2vh;
+    width: 45vh;
+    height: 4vh;
+    border-radius: 6px 6px 6px 6px;
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+
+.td {
+    background-color: orange;
+}
+.ip {
+    background-color: tomato;
+}
+
+.d {
+    background-color: lightskyblue;
+}
+
+#sidePanel {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    width: 30vh;
+    line-height: 5vh;
+    height: 85vh;
+    border-radius: 6px;
+}
+
+
+.bucket {
+    background-color: lightgrey;
+    height: 85vh;
+    border-radius: 0px 0px 6px 6px;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    margin: 1vh;
+}
+
+ul {
+    list-style-type: none;
+}
