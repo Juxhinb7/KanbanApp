@@ -1,13 +1,42 @@
 import React from 'react';
 import "./App.css";
-import Wrapper from "./components/Wrapper";
 import "./components/css/Wrapper.css";
+import "./components/css/Calendar.css";
+import {Routes, Route} from "react-router-dom";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import Milestones from "./components/Milestones";
+import Tasks from "./components/Tasks";
+import Reports from "./components/Reports";
+import Calendar from "./components/Calendar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faDiagramNext} from '@fortawesome/free-solid-svg-icons';
+import Content from "./components/Content";
+
 
 function App() {
   return (
-    <div>
-      <Wrapper name="KanbanApp"/>
+    <div id="wrapper">
+      <header>
+                <h1><FontAwesomeIcon icon={faDiagramNext}/> KanbanApp</h1>
+            </header>
+            <div id="main">
+              <Content />
+              <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="projects" element={<Projects />}/>
+                <Route path="milestones" element={<Milestones />}/>
+                <Route path="board" element={<Tasks />}/>
+                <Route path="reports" element={<Reports />}/>
+                <Route path="calendar" element={<Calendar />}/>
+              </Routes>
+                
+            </div>
     </div>
+            
+              
+            
+            
   );
 }
 

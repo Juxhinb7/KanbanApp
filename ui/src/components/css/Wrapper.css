@@ -51,10 +51,11 @@ h1 {
 #sidePanel {
     background-color: rgb(33, 33, 33);
     color: white;
-    width: 15vh;
+    width:25vh;
     line-height: 5vh;
-    height: 32vh;
+    height: 35vh;
     border-radius: 6px;
+    text-align: left;
 }
 
 
@@ -76,28 +77,7 @@ ul {
 }
 
 
-@media (max-width: 2220px) {
-    #main {
-        flex-direction: column;
-    }
-    #sidePanel {
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-    }
-    .flex-item {
-        margin-top: 10vh;
-    }
-}
-
-@media (max-width: 2000px) {
-    .flex-item {
-        width: 35vh;
-        margin-top: 10vh;
-    }
-}
-
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
     #tasks {
         flex-direction: column;
     }
@@ -116,4 +96,25 @@ ul {
     .flex-item {
         width: 20vh;
     }
+}
+
+.list-title {
+    color: white;
+    font-weight: 700;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.tdtitle {
+    background: rgb(58,121,180);
+    background: linear-gradient(180deg, rgba(58,121,180,1) 0%, rgb(38, 170, 203) 100%, rgba(69,221,252,1) 100%); 
+}
+
+.iptitle {
+    background: rgb(180,58,115);
+    background: linear-gradient(180deg, rgba(180,58,115,1) 0%, rgba(155,29,253,1) 100%, rgba(252,176,69,1) 100%); 
+}
+
+.dtitle {
+    background: rgb(58,180,110);
+    background: linear-gradient(180deg, rgba(58,180,110,1) 0%, rgba(50,253,29,1) 100%, rgba(252,176,69,1) 100%);  
 }
