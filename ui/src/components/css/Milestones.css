@@ -1,0 +1,6 @@
+#milestones {
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    margin: 0 auto;
+}
