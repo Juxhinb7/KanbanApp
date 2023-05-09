@@ -3,7 +3,6 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
 import {FormControl, InputLabel, Select, MenuItem, Button, Box} from "@material-ui/core";
-import { isPropertySignature } from "typescript";
 
 export const AddEntryDialog = (props: any) => {
     return (
@@ -51,7 +50,7 @@ export const UpdateEntryDialog = (props: any) => {
         <Dialog open={props.edit}>
             
             <DialogTitle>{"Card"}<button style={{marginLeft: "11vh", border: "none", background: "red", color: "white"}} type="button" onClick={props.handleClickToCloseEdit} >X</button></DialogTitle>
-            <Box component="form" onSubmit={props.updateCard}>
+            <Box component="form" onSubmit={props.updateCard }>
             <DialogContent>
                 <TextField required label="Title" value={props.title} onChange={props.handleTitleChange}></TextField>
             </DialogContent>

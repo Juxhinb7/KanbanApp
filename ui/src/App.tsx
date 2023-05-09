@@ -11,7 +11,7 @@ import Reports from "./components/Reports";
 import Calendar from "./components/Calendar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDiagramNext} from '@fortawesome/free-solid-svg-icons';
-import Content from "./components/Content";
+import SidePanel from "./components/SidePanel";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
                 <h1><FontAwesomeIcon icon={faDiagramNext}/> KanbanApp</h1>
             </header>
             <div id="main">
-              <Content />
+              <SidePanel />
               <Routes>
                 <Route path="/" element={<Home />}/>
                 <Route path="projects" element={<Projects />}/>

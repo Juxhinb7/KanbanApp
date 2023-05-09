@@ -25,12 +25,13 @@ h1 {
     flex-direction: row;
     border-radius: 6px;
     margin: 0 auto;
+    
 }
 
 .flex-item {
     margin-right: 2vh;
     margin-left: 2vh;
-    width: 45vh;
+    width: 30vh;
     height: 4vh;
     border-radius: 6px 6px 0px 0px;
     text-align: center;
@@ -51,7 +52,7 @@ h1 {
 #sidePanel {
     background-color: rgb(33, 33, 33);
     color: white;
-    width:25vh;
+    width:15vh;
     line-height: 5vh;
     height: 35vh;
     border-radius: 6px;
@@ -64,6 +65,7 @@ h1 {
     height: 85vh;
     border-radius: 0px 0px 6px 6px;
     box-shadow: 0px 0px 5px 0px lightgrey;
+    overflow-y: auto;
 }
 
 #main {
@@ -99,22 +101,124 @@ ul {
 }
 
 .list-title {
-    color: white;
+    color: black;
     font-weight: 700;
     border-radius: 6px 6px 0px 0px;
+    background-color: white;
+    
+}
+.card {
+    width: 20vh;
+    height: 8vh;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0.5vh 0.5vh 0.5vh 0.5vh;
+    margin-top: 1vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
-.tdtitle {
-    background: rgb(58,121,180);
-    background: linear-gradient(180deg, rgba(58,121,180,1) 0%, rgb(38, 170, 203) 100%, rgba(69,221,252,1) 100%); 
+#title {
+    margin-top: 1.5vh;
 }
 
-.iptitle {
-    background: rgb(180,58,115);
-    background: linear-gradient(180deg, rgba(180,58,115,1) 0%, rgba(155,29,253,1) 100%, rgba(252,176,69,1) 100%); 
+.card-button {
+    margin-top: 0vh;
+    color: rgb(78, 78, 78);
 }
 
-.dtitle {
-    background: rgb(58,180,110);
-    background: linear-gradient(180deg, rgba(58,180,110,1) 0%, rgba(50,253,29,1) 100%, rgba(252,176,69,1) 100%);  
+.edit {
+    margin-left: 15vh;
+    border: none;
+    background: none;
+}
+
+.remove {
+    border: none;
+    background: none;
+}   
+
+.card-info {
+    display: inline-block;
+    margin-top: 2vh;
+    height: 2vh;
+    width: 6vh;
+    font-size: 0.8vh;
+    line-height: 2.2;
+    border-radius: 0.5vh 0.5vh 0.5vh 0.5vh;
+    font-weight: 850;
+}
+
+#prio {
+    margin-top: 1vh;
+    width: 5vh;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1vh 1vh 1vh 1vh;
+    font-size: 1vh;
+    font-weight: 800;
+    line-height: 1.5;
+    color: white;
+}
+
+@media (max-height: 1000px) {
+    .card {
+        width: 15vh;
+        height: 10vh;
+        font-size: 1vh;
+    }
+    #prio {
+        margin-top: 3vh;
+        font-size: 1vh;
+        width: 5vh;
+        margin-left: 0.5vh;
+    }
+    .card-button {
+        margin-top: 0vh;
+        margin-left: 0.3vh;
+        
+    }
+    #pencil {
+        width: 1vh;
+        height: 1vh;
+    }
+    #trash {
+        width: 1vh;
+        height: 1vh;
+    }
+    .flex-item {
+        width: 200px;
+        height: 200px;
+    }
+    .edit {
+        margin-left: 10vh;
+    }
+}
+
+@media (max-height: 890px) {
+    #prio {
+        margin-top: 0vh;
+    }
+    .card-info{
+        margin-top: 1vh;
+    }
+    .edit {
+        margin-left: 0.5vh;
+    }
+}
+
+#hoverArea {
+    width: 20vh;
+    height: 8vh;
+    background: rgb(184, 209, 230);
+    margin: 0 auto;
+    margin-top: 1vh;
+    border-radius: 0.5vh 0.5vh 0.5vh 0.5vh;
+}
+
+#id {
+    font-size: 0.5vh;
+    color:white;
 }
